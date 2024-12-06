@@ -1,3 +1,6 @@
+import { utilities } from '@here/utilities';
+
 export function cart(): string {
-  return 'cart';
+  const a = utilities();
+  return a + ' cart';
 }
