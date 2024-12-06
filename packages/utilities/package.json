@@ -1,0 +1,27 @@
+{
+  "name": "@here/utilities",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "private": true,
+  "nx": {
+    "sourceRoot": "packages/utilities/src",
+    "projectType": "library",
+    "name": "utilities",
+    "targets": {
+      "test": {
+        "executor": "@nx/vite:test",
+        "outputs": [
+          "{options.reportsDirectory}"
+        ],
+        "options": {
+          "reportsDirectory": "../../coverage/packages/utilities"
+        }
+      }
+    }
+  }
+}
