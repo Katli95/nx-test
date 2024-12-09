@@ -12,6 +12,9 @@
     "sourceRoot": "packages/utilities/src",
     "projectType": "library",
     "name": "utilities",
+    "tags": [
+      "utilities"
+    ],
     "targets": {
       "test": {
         "executor": "@nx/vite:test",

@@ -13,12 +13,12 @@ module.exports = [
       '@nx/enforce-module-boundaries': [
         'error',
         {
-          enforceBuildableLibDependency: true,
-          allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
+          // enforceBuildableLibDependency: true,
+          // allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'cart',
+              onlyDependOnLibsWithTags: ['utilities'],
             },
           ],
         },

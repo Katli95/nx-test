@@ -13,6 +13,9 @@
     "sourceRoot": "packages/cart/src",
     "projectType": "library",
     "name": "cart",
+    "tags": [
+      "cart"
+    ],
     "targets": {
       "test": {
         "executor": "@nx/vite:test",
