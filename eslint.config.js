@@ -13,13 +13,18 @@ module.exports = [
       '@nx/enforce-module-boundaries': [
         'error',
         {
-          // enforceBuildableLibDependency: true,
-          // allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
+          enforceBuildableLibDependency: true,
+          allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
               sourceTag: 'cart',
               onlyDependOnLibsWithTags: ['utilities'],
             },
+            // If the below rule is applied, then it results in a True Negative error in import in `/packages/cart/src/lib/cart.ts`
+            // {
+            //   sourceTag: 'utilities',
+            //   onlyDependOnLibsWithTags: ['cart'],
+            // },
           ],
         },
       ],
